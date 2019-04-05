@@ -1,26 +1,26 @@
-import React, { Component } from "react";
+import React from "react";
 import { View, ImageBackground, StyleSheet, Text } from "react-native";
 import { Button } from "native-base";
 
-class Entry extends Component {
-  render() {
-    return (
-      <View style={styles.root}>
-        <ImageBackground
-          source={require("../../assets/img/landing.jpg")}
-          style={styles.backgroundImage}
-        >
-          <View style={styles.imageView}>
-            <Text style={styles.title}>The Geo Fiction App</Text>
-            <Button block={true} onPress={() => {}} style={styles.buttonStyle}>
-              <Text style={styles.buttonText}>Start Searching</Text>
-            </Button>
-          </View>
-        </ImageBackground>
-      </View>
-    );
-  }
-}
+interface Props {}
+
+const Entry: React.FC<Props> = () => {
+  return (
+    <View style={styles.root}>
+      <ImageBackground
+        source={require("../../assets/img/landing.jpg")}
+        style={styles.backgroundImage}
+      >
+        <View style={styles.imageView}>
+          <Text style={styles.title}>The Geo Fiction App</Text>
+          <Button block={true} onPress={() => {}} style={styles.buttonStyle}>
+            <Text style={styles.buttonText}>Start Searching</Text>
+          </Button>
+        </View>
+      </ImageBackground>
+    </View>
+  );
+};
 
 const styles = StyleSheet.create({
   root: {
@@ -50,3 +50,25 @@ const styles = StyleSheet.create({
 });
 
 export default Entry;
+
+// class Entry extends Component {
+//   render() {>
+//     return (
+//       <View style={styles.root}>
+//         <ImageBackground
+//           source={require("../../assets/img/landing.jpg")}
+//           style={styles.backgroundImage}
+//         >
+//           <View style={styles.imageView}>
+//             <Text style={styles.title}>The Geo Fiction App</Text>
+//             <Button block={true} onPress={() => {}} style={styles.buttonStyle}>
+//               <Text style={styles.buttonText}>Start Searching</Text>
+//             </Button>
+//           </View>
+//         </ImageBackground>
+//       </View>
+//     );
+//   }
+// }
+
+// export default Entry;
