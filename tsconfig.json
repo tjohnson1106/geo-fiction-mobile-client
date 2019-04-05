@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react-native",
+    "lib": ["es6", "esnext.asynciterable", "esnext", \"es2017"],
+    "strict": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "rootDir": "src",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    // uncomment to true after Meteor integration
+    // "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+
+    "paths": {
+      "expo": ["../node_modules/@types/expo", "../node_modules/expo"]
+    }
+  }
+}
