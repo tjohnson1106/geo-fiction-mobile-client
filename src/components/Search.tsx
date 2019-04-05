@@ -13,7 +13,11 @@ class Search extends Component {
 }
 
 const styles = StyleSheet.create({
-  root: {}
+  root: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center"
+  }
 });
 
 export default Search;

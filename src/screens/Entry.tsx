@@ -20,7 +20,7 @@ const Entry: React.FC<PropsWithChildren> = (props) => {
           <Text style={styles.title}>The Geo Fiction App</Text>
           <Button
             block={true}
-            onPress={() => props.switchScreen("screen")}
+            onPress={() => props.switchScreen("search")}
             style={styles.buttonStyle}
           >
             <Text style={styles.buttonText}>Start Searching</Text>
